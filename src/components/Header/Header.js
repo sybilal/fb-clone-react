@@ -19,11 +19,11 @@ const Header = () => {
                 <img height="40px" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook logo" />
                 <div className="header__input">
                     <SearchIcon />
-                    <input type="text" />
+                    <input placeholder="Search Facebook" type="text" />
                 </div>
             </div>
             <div className="header__middle">
-                <div className="header__option">
+                <div className="header__option header__option--active">
                     <HomeIcon fontSize="large" />
                 </div>
                 <div className="header__option">
@@ -41,22 +41,23 @@ const Header = () => {
             </div>
             <div className="header__right">
                 <div className="header__info">
-                    <Avatar />
+                    <Avatar src="https://media-exp1.licdn.com/dms/image/C5103AQEU5dFgRJDyGw/profile-displayphoto-shrink_100_100/0/1567578843442?e=1619654400&v=beta&t=aCrZs0MqBq_tWI-P556YsI4So1pAleLGWAamKpz1P6M" />
                     <h4>Bilal</h4>
 
-                    <IconButton>
-                        <AddIcon />
-                    </IconButton>
-                    <IconButton>
-                        <ForumIcon />
-                    </IconButton>
-                    <IconButton>
-                        <NotificationsActiveIcon />
-                    </IconButton>
-                    <IconButton>
-                        <ExpandMoreIcon />
-                    </IconButton>
+
                 </div>
+                <IconButton>
+                    <AddIcon />
+                </IconButton>
+                <IconButton>
+                    <ForumIcon />
+                </IconButton>
+                <IconButton>
+                    <NotificationsActiveIcon />
+                </IconButton>
+                <IconButton>
+                    <ExpandMoreIcon />
+                </IconButton>
             </div>
         </div>
     )
