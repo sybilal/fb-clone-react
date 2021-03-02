@@ -1,9 +1,12 @@
 import React from 'react'
+import MessageSender from '../MessageSender/MessageSender'
+import StoryReel from '../StoryReel/StoryReel'
 
 const Feed = () => {
     return (
         <div className="feed">
-            <h1>Feed</h1>
+            <StoryReel />
+            <MessageSender />
         </div>
     )
 }
