@@ -5,7 +5,10 @@ import './Feed.css'
 const Feed = () => {
     return (
         <div className="feed">
+
+            <div className="start"></div>
             <StoryReel />
+            <div className="end"></div>
             <MessageSender />
         </div>
     )

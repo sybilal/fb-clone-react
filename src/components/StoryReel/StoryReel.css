@@ -1,3 +1,8 @@
 .storyReel {
-    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+    padding: 10px 10px 27px;
+    user-select: none;
+    overflow: hidden;
 }

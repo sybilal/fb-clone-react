@@ -1,7 +1,31 @@
-.feed{
+.feed {
     flex: 1;
-    padding:30px 150px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    align-items: center;
+    max-width: 100%;
+    min-width: 530px;
+}
+
+.start,
+.end {
+    display: inline-block;
+    height: 260px;
+    width: 20px;
+    position: absolute;
+
+}
+
+.start {
+    align-self: flex-start;
+    margin-left: -10px;
+    background-image: linear-gradient(to right, #f1f2f5, transparent);
+    ;
+}
+
+.end {
+    align-self: flex-end;
+    margin-right: -10px;
+    background-image: linear-gradient(to left, #f1f2f5, transparent);
 }
