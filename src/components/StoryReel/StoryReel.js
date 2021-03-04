@@ -62,19 +62,19 @@ const StoryReel = () => {
     const Start = styled(FadeEdge)`
     align-self: flex-start;
     margin-left: -10px;
-    background-image: linear-gradient(to right, #f1f2f5, transparent);
+    background-image: linear-gradient(to right, #f1f2f5, rgba(241,242,245,0.01));
     `;
 
     const End = styled(FadeEdge)`
     align-self: flex-end;
     margin-right: -10px;
-    background-image: linear-gradient(to left, #f1f2f5, transparent);
+    background-image: linear-gradient(to left, #f1f2f5, rgba(241,242,245,0.01));
     `;
 
     return (
         <>
             <Start />
-            <ScrollContainer vertical={false} className="storyReel">
+            <ScrollContainer vertical={false} nativeMobileScroll={true} className="storyReel">
                 {stories.map((e) => <Story
                     profileSrc={e.profileSrc}
                     image={e.image}
