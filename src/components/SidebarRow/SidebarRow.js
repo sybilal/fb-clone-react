@@ -1,12 +1,35 @@
 import React from 'react'
-import './SidebarRow.css';
+import styled from 'styled-components';
 
 const SidebarRow = ({ title, Icon }) => {
+
+    const Wrapper = styled.div`
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        &>h4 {
+            margin: 0 20px;
+            font-weight: 600;
+        }
+
+    &>.MuiSvgIcon-root {
+        color: #2e81f4;
+    }
+    `;
+
+
     return (
-        <div className="sidebar-row">
+        <Wrapper>
             {<Icon />}
             <h4>{title}</h4>
-        </div>
+        </Wrapper>
     )
 }
 
