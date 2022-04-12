@@ -41,7 +41,7 @@ const Header = () => {
             </div>
             <div className="header__right">
                 <div className="header__info">
-                    <Avatar src="https://media-exp1.licdn.com/dms/image/C5103AQEU5dFgRJDyGw/profile-displayphoto-shrink_100_100/0/1567578843442?e=1619654400&v=beta&t=aCrZs0MqBq_tWI-P556YsI4So1pAleLGWAamKpz1P6M" />
+                    <Avatar src="https://avatars.githubusercontent.com/u/29626378?v=4" />
                     <h4>Bilal</h4>
 
 
